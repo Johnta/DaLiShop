@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+android:state_focused="true/false"
+true:表示聚焦状态使用，false:表示非聚焦状态下使用
+android:state_pressed="true/false"
+true:表示按下状态使用，false：表示非按下状态下使用
+android:state_selected="true/false"
+true:表示被选中状态下使用，false：表示非选中状态下使用
+android:state_active="true/false"
+true:表示可勾选状态下使用，false：表示不可勾选状态下使用
+android:state_checkable="true/false"
+true:表示勾选状态下使用，false：表示非勾选状态下使用
+-->
+
+
+    <!-- no focused states-->
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="false" android:drawable="@mipmap/icon_home"/>
+    <item android:state_focused="false" android:state_selected="true" android:state_pressed="false" android:drawable="@mipmap/icon_home_press"/>
+    <!-- focused states-->
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="false" android:drawable="@mipmap/icon_home_press"/>
+    <item android:state_focused="true" android:state_selected="true" android:state_pressed="false" android:drawable="@mipmap/icon_home_press"/>
+    <!-- pressed-->
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@mipmap/icon_home_press"/>
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@mipmap/icon_home"/>
+
+</selector>
